@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Intenlisity | Dashboard - Student Assignment</title>   
+    <link rel="icon" type="image/x-icon" href="asset/img/logo/favicon.ico" />
+    <link rel="stylesheet" href="asset/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="asset/icon/font_awesome_icon/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="asset/icon/bootstrap_icon/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="asset/css/custom/aos.css" />
+    <link rel="stylesheet" href="asset/css/custom/dashboard-root.css" />
+    <link rel="stylesheet" href="asset/css/custom/dashboard-navbar.css" />
+    <link rel="stylesheet" href="asset/css/custom/dashboard-style.css" />
+    
+  </head>
+
+  <style>
+    img {
+      image-rendering: -moz-crisp-edges !important;
+      image-rendering: -o-crisp-edges !important;
+      image-rendering: -webkit-optimize-contrast !important;
+      image-rendering: crisp-edges !important;
+      -ms-interpolation-mode: nearest-neighbor !important;
+    }
+  </style>
+<body>
+    <header class="header-menu" id="header-menu">
+        <nav
+          class="navbar navbar-default navbar-expand d-flex align-items-center"
+        >
+          <div class="container-fluid">
+            <div class="navbar-all-list d-flex justify-content-md-between">
+              <ul class="navbar-nav navbar-left">
+                <li class="li-nav">
+     
+                  <div
+                    class="menu-toggle mobile-swipe swipe-icon"
+                    id="sidebar-swipe"
+                  >
+                    <div class="trigger">
+                      <svg
+                        class="bars"
+                        viewBox="0 0 100 100"
+                        onclick="this.classList.toggle('active')"
+                      >
+                        <path
+                          class="line top"
+                          d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272"
+                        ></path>
+                        <path
+                          class="line middle"
+                          d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272"
+                        ></path>
+                        <path
+                          class="line bottom"
+                          d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+                <li class="li-nav li-menu-name">
+                  <span>Assignment</span>
+                </li>
+              </ul>
+              <ul
+                class="navbar-nav d-flex gap-2 align-items-center navbarSideRight"
+              >
+                <li class="nav-item after-line-off message-box">
+                  <a class="nav-link" href="#"
+                    ><img src="asset/img/navbar_icon/msg.svg" />
+                    <p class="notification-msg-numbar">12</p>
+                  </a>
+                </li>
+  
+                <li class="nav-item after-line-off notification-menu dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="asset/img/navbar_icon/notification.svg" />
+                    <p class="notification-msg-numbar">12</p>
+                  </a>
+                  <ul
+                    class="dropdown-menu notification-dropdown animate slideIn"
+                    style="right: 0; left: auto"
+                  >
+                    <li class="mobile-notification">
+                      <p class="notification-header">Notification</p>
+                      <hr style="opacity: 0.1; margin: 0 auto; width: 95%" />
+                      <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link active"
+                            id="All-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#All-tab-pane"
+                            type="button"
+                            role="tab"
+                            aria-controls="All-tab-pane"
+                            aria-selected="true"
+                          >
+                            All
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link"
+                            id="Unread-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#Unread-tab-pane"
+                            type="button"
+                            role="tab"
+                            aria-controls="Unread-tab-pane"
+                            aria-selected="false"
+                            tabindex="-1"
+                          >
+                            Unread
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="All-tab-pane"
+                          role="tabpanel"
+                          aria-labelledby="home-tab"
+                          tabindex="0"
+                        >
+                          <ul>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >This is the next notiification of the
+                                routerouterouterouterouteroute</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >This is the next notiification of the
+                                routerouterouterouterouteroute</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >This is the next notiification of the
+                                routerouterouterouterouteroute</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >This is the next notiification of the
+                                routerouterouterouterouteroute</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >This is the next notiification of the
+                                routerouterouterouterouteroute</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >This is the next notiification of the
+                                routerouterouterouterouteroute</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >This is the next notiification of the
+                                routerouterouterouterouteroute</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >This is the next notiification of the
+                                routerouterouterouterouteroute</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >This is the next notiification of the
+                                routerouterouterouterouteroute</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >This is the next notiification of the
+                                routerouterouterouterouteroute</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="Unread-tab-pane"
+                          role="tabpanel"
+                          aria-labelledby="profile-tab"
+                          tabindex="0"
+                        >
+                          <ul>
+                            <li>
+  
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >Where is next unread u next notiification of the
+                                route</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >Where is next unread u next notiification of the
+                                route</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >Where is next unread u next notiification of the
+                                route</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >Where is next unread u next notiification of the
+                                route</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >Where is next unread u next notiification of the
+                                route</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >Where is next unread u next notiification of the
+                                route</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >Where is next unread u next notiification of the
+                                route</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >Where is next unread u next notiification of the
+                                route</a
+                              >
+                            </li>
+                            <li>
+                              <i class="bi bi-bell-fill"></i
+                              ><a href="#"
+                                >Where is next unread u next notiification of the
+                                route</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item search-modal_li">
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#firtsearch"
+                  >
+                    <i class="bi bi-search"></i>
+                  </button>
+                </li>
+                <li
+                  class="nav-item after-line-off dropdown profile-user go-content-mobile-576 go-content-resize-576"
+                >
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- <img style="width: 22px;height: 22px;" src="asset/img/navbar_icon/user-icon.svg"> Hi, Sima -->
+                    <img
+                      style="width: 22px; height: 22px; border-radius: 100px"
+                      src="asset/img/profile/formal.jpg"
+                    />
+                    Hi, Sima
+                  </a>
+                  <ul
+                    class="dropdown-menu animate slideIn"
+                    style="right: 0; left: auto;border-bottom: 0px"
+                  >
+                    <li class="nav-item-dropdown">
+                      <a href="#" class="dropdown-item"
+                        ><img src="asset/img/navbar_icon/teacher.svg" /> Teacher
+                        Dashboard</a
+                      >
+                    </li>
+                    <li class="nav-item-dropdown">
+                      <a href="#" class="dropdown-item"
+                        ><img src="asset/img/navbar_icon/student.svg" /> Student
+                        Dashboard</a
+                      >
+                    </li>
+                    <li class="nav-item-dropdown">
+                      <a href="#" class="dropdown-item"
+                        ><img src="asset/img/navbar_icon/prentsicon.svg" />
+                        Parents Dashboard</a
+                      >
+                    </li>
+  
+                    <li class="nabbar-kids nav-item-dropdown">
+                      <a
+                        onclick="kidsMenu()"
+                        class="nav-link dropdown-toggle kids-dropdown kids-showdrp"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        ><img src="asset/img/navbar_icon/kids.svg" /> Your Kids</a
+                      >
+                      <ul
+                        class="dropdown-menu-kids showdrp"
+                        id="gmDropdown"
+                        aria-labelledby="navbarDropdownMenuLink"
+                      >
+                        <li>
+                          <a class="dropdown-item-k" href="#"
+                            ><img src="asset/img/navbar_icon/kidpic.jpg" />Jhondie
+                            skd</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item-k" href="#"
+                            ><img src="asset/img/navbar_icon/kidpic.jpg" />Jhondie
+                            skd</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+  
+                    <li class="nav-item-dropdown after-line-off language-choose">
+                      <div
+                        class="custom-select languaageClick"
+                        onclick="languaageClick()"
+                        style="width: 60px"
+                      >
+                        <img src="asset/img/navbar_icon/globe.svg" alt="" />
+                        <select>
+                          <option value="1">IND</option>
+                          <option value="2">ENG</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li class="nav-item-dropdown settings">
+                      <a href="#" class="dropdown-item"
+                        ><img
+                          src="asset/img/navbar_icon/dharmachakra.svg"
+                        />Settings</a
+                      >
+                    </li>
+                    <li class="nav-item-dropdown logout">
+                      <a href="#" class="dropdown-item"
+                        ><img
+                          src="asset/img/navbar_icon/sign-out-alt.svg"
+                        />Logout</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!--/.nav-collapse -->
+          </div>
+          <!--/.container-fluid -->
+        </nav>
+    </header>
+    <div
+        class="modal fade searchmodal"
+        id="firtsearch"
+        data-bs-backdrop="false"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="firtsearchLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="firtsearchLabel"></h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+          <div class="sidebar-nav">
+            <div class="sidebar-logo-section">
+              <p class="sortlogodiare">
+                <a href="index.html"><img src="asset/img/logo/sortlogo.PNG" /></a>
+              </p>
+              <p style="position: absolute;">
+                <span id="main-menu-list" class="main-menu-list ms-0"
+                  ><a href="index.html"><img class="sidebar-logo-img" src="asset/img/logo/logo.png"
+                /></a></span>
+              </p>
+             
+            </div>
+            <div class="side-menu-full">
+              <ul class="nav-side-menu" id="menu">
+                <li class="nav-parent">
+                  <a
+                    href="index.html"
+                    class="side-menu-items maindhasboard "
+                    id="main-menu-item-1"
+                  >
+                    <span class="icon-for-menu">
+                      <i class="bi bi-house-door-fill"></i>
+                    </span>
+                    <span id="main-menu-list" class="main-menu-list"
+                      >Dashboard</span
+                    >
+                  </a>
+                </li>
+  
+                <li class="nav-parent">
+                  <a
+                    class="nav-link menu-icon-has-dropdown side-menu-items collapsed "
+                    
+                    href="student_couses.html"
+                   
+                    data-bs-target="#courseNav"
+                    aria-expanded="false"
+                    aria-controls="courseNav"
+                  >
+                    <span class="icon-for-menu"
+                      ><i class="bi bi-book-fill"></i
+                    ></span>
+                    <span id="main-menu-list" class="main-menu-list"
+                      >Courses</span
+                    >
+                    <div
+                      class="icon-upeer-down fa fa-angle-down iconupperdown"
+                    ></div>
+                  </a>
+                  <div
+                    id="courseNav"
+                    class="collapse"
+                    data-bs-parent="#sidebarNav"
+                  >
+                    <ul class="nav sub-menu flex-column">
+                      <h4>
+                        <i class="bi bi-book-fill"></i
+                          >Courses
+                      </h4>
+                      <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link" id="sc-tab" data-bs-toggle="tab" data-bs-target="#student__current__courses" type="button" role="tab" aria-controls="student__current__courses" aria-selected="true">Current Courses</a>
+                       
+                      
+                        <!-- <a class="nav-link submenu-link" href="#"
+                        ><i class="fas fa-minus"></i> Current Courses</a
+                        > -->
+                      </li>
+                      <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link" id="sp-tab" data-bs-toggle="tab" data-bs-target="#student__previous__courses" type="button" role="tab" aria-controls="studen__previous__courses" aria-selected="false">Previous Courses</a>
+                        <!-- <a class="nav-link submenu-link" href="#"
+                          ><i class="fas fa-minus"></i> Pending Courses</a
+                        > -->
+                      </li>
+                      <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link" id="p-tab" data-bs-toggle="tab" data-bs-target="#pending__courses" type="button" role="tab" aria-controls="pending__courses" aria-selected="false">Pending Courses</a>
+                        <!-- <a class="nav-link submenu-link" href="#"
+                          ><i class="fas fa-minus"></i> Complete Courses</a
+                        > -->
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-parent">
+                  <a
+                    class="nav-link menu-icon-has-dropdown side-menu-items  active-link-as"
+                    href="student_assignments.html"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#assignmentsNav"
+                    aria-expanded="false"
+                    aria-controls="assignmentsNav"
+                  >
+                    <span class="icon-for-menu"
+                      ><i class="bi bi-file-text-fill"></i></span>
+                    <span id="main-menu-list" class="main-menu-list"
+                      >Assignments</span
+                    >
+                    <div
+                      class="icon-upeer-down fa fa-angle-down iconupperdown"
+                    ></div>
+                  </a>
+                  <div
+                    id="assignmentsNav"
+                    class="collapse show"
+                    data-bs-parent="#sidebarNav"
+                  >
+                    <ul class="nav sub-menu flex-column">
+                      <h4>
+                        <i class="bi bi-file-text-fill"></i>Assignment
+                      </h4>
+                      <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link active" id="sc-tab" data-bs-toggle="tab" data-bs-target="#current_assignments" type="button" role="tab" aria-controls="current_assignments" aria-selected="true">Current Assignment</a>
+                       
+                      </li>
+                      <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link" id="sp-tab" data-bs-toggle="tab" data-bs-target="#submitted_assignments" type="button" role="tab" aria-controls="submitted_assignments" aria-selected="false">Submitted Assignments</a>
+                        <!-- <a class="nav-link submenu-link" href="#"
+                          ><i class="fas fa-minus"></i> Pending Courses</a
+                        > -->
+                      </li>
+                      <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link" id="p-tab" data-bs-toggle="tab" data-bs-target="#previous_assignments" type="button" role="tab" aria-controls="previous_assignments" aria-selected="false">Previous Assignments</a>
+                        <!-- <a class="nav-link submenu-link" href="#"
+                          ><i class="fas fa-minus"></i> Complete Courses</a
+                        > -->
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+               
+                <li class="nav-parent">
+                  <a
+                    href=""
+                    class="side-menu-items maindhasboard"
+                    id="main-menu-item-1"
+                  >
+                    <span class="icon-for-menu">
+                      <i class="bi bi-envelope-fill"></i>
+                    </span>
+                    <span id="main-menu-list" class="main-menu-list"
+                      >Messages</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-parent">
+                  <a
+                    href=""
+                    class="side-menu-items maindhasboard"
+                    id="main-menu-item-1"
+                  >
+                    <span class="icon-for-menu">
+                      <i class="bi bi-person-video3"></i>
+                    </span>
+                    <span id="main-menu-list" class="main-menu-list"
+                      >Teachers</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-parent">
+                  <a
+                    href=""
+                    class="side-menu-items maindhasboard"
+                    id="main-menu-item-1"
+                  >
+                    <span class="icon-for-menu">
+                      <i class="bi bi-calendar-check-fill"></i>
+                    </span>
+                    <span id="main-menu-list" class="main-menu-list"
+                      >Schedule</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-parent">
+                  <a
+                    href=""
+                    class="side-menu-items maindhasboard"
+                    id="main-menu-item-1"
+                  >
+                    <span class="icon-for-menu">
+                      <i class="bi bi-box-seam-fill"></i>
+                    </span>
+                    <span id="main-menu-list" class="main-menu-list"
+                      >Materials</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-parent">
+                  <a
+                    href="student_evaluation.html"
+                    class="side-menu-items maindhasboard "
+                    id="main-menu-item-1"
+                  >
+                    <span class="icon-for-menu">
+                      <i class="bi bi-box-seam-fill"></i>
+                    </span>
+                    <span id="main-menu-list" class="main-menu-list"
+                      >Evaluation</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-parent">
+                  <a
+                    href=""
+                    class="side-menu-items maindhasboard"
+                    id="main-menu-item-1"
+                  >
+                    <span class="icon-for-menu">
+                      <i class="bi bi-sticky-fill"></i>
+                    </span>
+                    <span id="main-menu-list" class="main-menu-list"
+                      >Graders</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-parent">
+                  <a
+                    href=""
+                    class="side-menu-items maindhasboard"
+                    id="main-menu-item-1"
+                  >
+                    <span class="icon-for-menu">
+                      <i class="bi bi-person-circle"></i>
+                    </span>
+                    <span id="main-menu-list" class="main-menu-list">Profile</span>
+                  </a>
+                </li>
+                <li class="nav-parent">
+                  <a
+                    href=""
+                    class="side-menu-items maindhasboard"
+                    id="main-menu-item-1"
+                  >
+                    <span class="icon-for-menu">
+                      <i class="bi bi-buildings-fill"></i>
+                    </span>
+                    <span id="main-menu-list" class="main-menu-list"
+                      >Classroom</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-parent">
+                  <a
+                    href=""
+                    class="side-menu-items maindhasboard"
+                    id="main-menu-item-1"
+                  >
+                    <span class="icon-for-menu">
+                      <i class="bi bi-people-fill"></i>
+                    </span>
+                    <span id="main-menu-list" class="main-menu-list"
+                      >Attendance</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-parent">
+                  <a
+                    class="nav-link menu-icon-has-dropdown side-menu-items collapsed"
+                    href="#"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#exmNav"
+                    aria-expanded="false"
+                    aria-controls="exmNav"
+                  >
+                    <span class="icon-for-menu"
+                      ><i class="bi bi-file-earmark-richtext-fill"></i></span>
+                    <span id="main-menu-list" class="main-menu-list"
+                      >Examination</span
+                    >
+                    <div
+                      class="icon-upeer-down fa fa-angle-down iconupperdown"
+                    ></div>
+                  </a>
+                  <div
+                    id="exmNav"
+                    class="collapse"
+                    data-bs-parent="#sidebarNav"
+                  >
+                    <ul class="nav sub-menu flex-column">
+                      <h4>
+                        <i class="bi bi-file-earmark-richtext-fill"></i>Examination
+                      </h4>
+                      <li class="nav-item">
+                        <a class="nav-link submenu-link" href="#"
+                          ><i class="fas fa-minus"></i> Exm 1</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link submenu-link" href="#"
+                          ><i class="fas fa-minus"></i> Exm 2</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link submenu-link" href="#"
+                          ><i class="fas fa-minus"></i> Exm 3</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                
+                <li class="nav-parent">
+                  <a
+                    href=""
+                    class="side-menu-items maindhasboard"
+                    id="main-menu-item-1"
+                  >
+                    <span class="icon-for-menu">
+                      <i class="bi bi-file-earmark-diff-fill"></i>
+                    </span>
+                    <span id="main-menu-list" class="main-menu-list">Reports</span>
+                  </a>
+                </li>
+                <li class="nav-parent">
+                  <a
+                    href=""
+                    class="side-menu-items maindhasboard"
+                    id="main-menu-item-1"
+                  >
+                    <span class="icon-for-menu">
+                      <i class="bi bi-gear-fill"></i>
+                    </span>
+                    <span id="main-menu-list" class="main-menu-list">Settings</span>
+                  </a>
+                </li>
+  
+              </ul>
+            </div>
+            <div class="settingloginfo">
+              <li class="li-nav swipe-side-tr nav-parent">
+                <a href="" class="swipe-icon mobilenone side-menu-items maindhasboard" id="sidebar-swipe">
+                  <i>
+                    <div class="round">
+                      <div id="cta">
+                        <span class="arrow primera next"
+                          ><i class="bi bi-chevron-right"></i
+                        ></span>
+                        <span class="arrow segunda next"
+                          ><i class="bi bi-chevron-right"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </i>
+                   <span id="main-menu-list" class="main-menu-list">collapse</span>
+                </a>
+  
+              </li>
+  
+              <li class="nav-parent">
+                <a
+                  href="#f"
+                  class="side-menu-items maindhasboard"
+                  id="main-menu-item-1"
+                >
+                  <span class="icon-for-menu">
+                    <img
+                      width="15px"
+                      src="asset/img/navbar_icon/sign-out-alt.svg"
+                    />
+                  </span>
+                  <span id="main-menu-list" class="main-menu-list">Logout</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="page-content-wrapper">
+          <div class="student__courses_content row-of-table-dashboard">
+              <ul class="nav nav-tabs" id="myAssignmentsTabCSP" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="sc-tab" data-bs-toggle="tab" data-bs-target="#current_assignments" type="button" role="tab" aria-controls="current_assignments" aria-selected="true">Current Assignments</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    
+                    <button class="nav-link" id="sp-tab" data-bs-toggle="tab" data-bs-target="#submitted_assignments" type="button" role="tab" aria-controls="submitted_assignments" aria-selected="false">Submitted Assignments</button>
+
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="p-tab" data-bs-toggle="tab" data-bs-target="#previous_assignments" type="button" role="tab" aria-controls="previous_assignments" aria-selected="false">Previous Assignments</button>
+                  </li>
+              </ul>
+              <div class="tab-content">
+                <div  class="tab-pane fade show active" id="current_assignments" role="tabpanel" aria-labelledby="sc-tab" tabindex="0">
+                  <div class="student__right_filter search_box">
+                      <form>
+                          <input type="search" name="search" id="">
+                          <button type="submit" name="submit"><i class="bi bi-search icon-search"></i> </button>
+                      </form>
+                      <a href="javascript:void(0)"><i class="fa fa-filter" aria-hidden="true"></i>
+                      </a>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="table-card">
+                      <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Course Name</th>
+                                    <th>Pogress Bar</th>
+                                    <th>Status</th>
+                                    <th>Grade</th>
+                                    <th>Due Date</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr onclick="window.location.href='your-link-here.html'" style="cursor: pointer;">
+                                <td><p class="name">Elementary Beginner</p></td>
+                                <td>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="max-width: 60.9%">
+                                      <span class="title">60.9%</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td><a href="javascript:void(0)" class="complete__btn btn">Complete</a></td>
+                                <td>A</td>
+                                <td>7.07.2023</td>
+                                <td><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></td>
+                              </tr>
+                              <tr onclick="window.location.href='your-link-here.html'" style="cursor: pointer;">
+                                <td><p class="name">Elementary Beginner</p></td>
+                                <td>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="max-width: 60.9%">
+                                      <span class="title">60.9%</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td><a href="javascript:void(0)" class="complete__btn btn">Complete</a></td>
+                                <td>A</td>
+                                <td>7.07.2023</td>
+                                <td><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></td>
+                              </tr>
+                              <tr onclick="window.location.href='your-link-here.html'" style="cursor: pointer;">
+                                <td><p class="name">Elementary Beginner</p></td>
+                                <td>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="max-width: 90%">
+                                      <span class="title">90%</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td><a href="javascript:void(0)" class="complete__btn btn">Complete</a></td>
+                                <td>A</td>
+                                <td>7.07.2023</td>
+                                <td><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+                <div id="submitted_assignments" class="tab-pane fade" role="tabpanel" aria-labelledby="p-tab" tabindex="0">
+                    <div class="student__right_filter search_box">
+                        <form>
+                            <input type="search" name="search" id="">
+                            <button type="submit" name="submit"><i class="bi bi-search icon-search"></i> </button>
+                        </form>
+                        <a href="javascript:void(0)"><i class="fa fa-filter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                          <div class="table-card">
+                          <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Course Name</th>
+                                        <th>Pogress Bar</th>
+                                        <th>Status</th>
+                                        <th>Grade</th>
+                                        <th>Due Date</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <tr onclick="window.location.href='your-link-here.html'" style="cursor: pointer;">
+                                    <td><p class="name">Elementary Beginner</p></td>
+                                    <td>
+                                      <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="max-width: 60.9%">
+                                          <span class="title">60.9%</span>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td><a href="javascript:void(0)" class="complete__btn btn">Complete</a></td>
+                                    <td>A</td>
+                                    <td>7.07.2023</td>
+                                    <td><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></td>
+                                  </tr>
+                                  <tr onclick="window.location.href='your-link-here.html'" style="cursor: pointer;">
+                                    <td><p class="name">Elementary Beginner</p></td>
+                                    <td>
+                                      <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="max-width: 60.9%">
+                                          <span class="title">60.9%</span>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td><a href="javascript:void(0)" class="complete__btn btn">Complete</a></td>
+                                    <td>A</td>
+                                    <td>7.07.2023</td>
+                                    <td><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></td>
+                                  </tr>
+                                  <tr onclick="window.location.href='your-link-here.html'" style="cursor: pointer;">
+                                    <td><p class="name">Elementary Beginner</p></td>
+                                    <td>
+                                      <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="max-width: 90%">
+                                          <span class="title">90%</span>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td><a href="javascript:void(0)" class="complete__btn btn">Complete</a></td>
+                                    <td>A</td>
+                                    <td>7.07.2023</td>
+                                    <td><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                          </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div id="previous_assignments" class="tab-pane fade" role="tabpanel" aria-labelledby="sp-tab" tabindex="0">
+                    <div class="student__right_filter search_box">
+                        <form>
+                            <input type="search" name="search" id="">
+                            <button type="submit" name="submit"><i class="bi bi-search icon-search"></i> </button>
+                        </form>
+                        <a href="javascript:void(0)"><i class="fa fa-filter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                          <div class="table-card">
+                          <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Course Name</th>
+                                        <th>Pogress Bar</th>
+                                        <th>Status</th>
+                                        <th>Grade</th>
+                                        <th>Due Date</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <tr onclick="window.location.href='your-link-here.html'" style="cursor: pointer;">
+                                    <td><p class="name">Elementary Beginner</p></td>
+                                    <td>
+                                      <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="max-width: 60.9%">
+                                          <span class="title">60.9%</span>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td><a href="javascript:void(0)" class="complete__btn btn">Complete</a></td>
+                                    <td>A</td>
+                                    <td>7.07.2023</td>
+                                    <td><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></td>
+                                  </tr>
+                                  <tr onclick="window.location.href='your-link-here.html'" style="cursor: pointer;">
+                                    <td><p class="name">Elementary Beginner</p></td>
+                                    <td>
+                                      <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="max-width: 60.9%">
+                                          <span class="title">60.9%</span>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td><a href="javascript:void(0)" class="complete__btn btn">Complete</a></td>
+                                    <td>A</td>
+                                    <td>7.07.2023</td>
+                                    <td><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></td>
+                                  </tr>
+                                  <tr onclick="window.location.href='your-link-here.html'" style="cursor: pointer;">
+                                    <td><p class="name">Elementary Beginner</p></td>
+                                    <td>
+                                      <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="max-width: 90%">
+                                          <span class="title">90%</span>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td><a href="javascript:void(0)" class="complete__btn btn">Complete</a></td>
+                                    <td>A</td>
+                                    <td>7.07.2023</td>
+                                    <td><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                          </div>
+                        
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="asset/js/custom/jquery.js"></script>
+    <script defer src="asset/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/custom/aos.js"></script>
+    <script src="asset/js/custom/dashboard-main.js"></script>
+    <script>
+      $(document).ready(function() {
+        // When a tab is shown, sync both sets of tabs
+        $('#assignmentsNav a[data-bs-toggle="tab"],#myAssignmentsTabCSP button[data-bs-toggle="tab"]').on('shown.bs.tab', function(e) {
+          var tabId = $(e.target).attr('id');  // Get the ID of the activated tab
+          
+          // Activate the corresponding tab in both sets
+          $('#assignmentsNav a.nav-link,#myAssignmentsTabCSP button.nav-link').removeClass('active'); // Remove active class from all tabs
+          $('#assignmentsNav a.nav-link[id="' + tabId + '"],#myAssignmentsTabCSP button.nav-link[id="' + tabId + '"]').addClass('active'); // Add active class to both tabs with the same ID
+        });
+      });
+    </script>
+
+</body>
+</html>
